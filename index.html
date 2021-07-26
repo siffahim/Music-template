@@ -9,19 +9,54 @@
     <style>
       body{
         background-color: rgb(243, 239, 239);
+        background-image: url(dribbble_rsound_landingpage_rezafaizarahman_2.png);
+        background-size: cover;
+        padding:1%;
+        width: 100%;
+        height: 100vh;
       }
       .container{
-        background: #fff;
+        background-color: #fff;
+        border:1px dotted white;
       }
       header{
-        background-image: url('Vector (1).png');
-        background-repeat: no-repeat;
+        background-image: url("1.png");
+        background-repeat:no-repeat;
         background-position: right;
       }
       section{
-        background-image: url('Vector.png');
-        background-repeat: no-repeat;
-        background-position: right;
+        background-image: url("2.png");
+        background-repeat:no-repeat;
+        background-position: top right;
+      }
+      .header-container{
+        display: flex;
+       
+      }
+      .header-content{
+        padding-left: 5%;
+        margin-top: 5%;
+      }
+      .thums{
+        margin-top: 180px;
+      }
+      .thums li{
+        list-style-type: "\1F44D";
+      }
+      @media only screen and (max-width:688px) {
+        .header-container{
+          flex-direction: column;
+        }
+        .header-content{
+          color:#fff;
+        }
+        .thums{
+          margin-top: 100px;
+        }
+        .header-img img{
+          width:100%;
+          height: auto;
+        }
       }
     </style>
 </head>
@@ -33,9 +68,9 @@
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <img src="Vector (2).png" alt="">
-                    Navbar</a>
+                    <span>Navbar</span></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-warning text"></span>
+                   <span class="fs-1 text-light">&#9776;</span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,28 +87,33 @@
                     </ul>
                     <ul class="nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
+                        <a class="nav-link text-light" href="#">Log in</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Sing up</a>
+                        <a class="nav-link text-light" href="#">Sing up</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
               <!--img---------------->
-              <div class="row">
-                <div class="col-lg-8 ps-5 mt-3">
-                  <h2>Come and Dance</h2>
-                  <h2>rewind your <span>happiness</span></h2>
-                  <button>Get rsound free</button>
-                </div>
-                <div class="col-lg-4">
-                  <div class="custom-img">
-                    <img class="img-fluid" src="freshh-connection-unsplash-removebg 1.png" alt="">
+            
+                  <div class="header-container">
+                    <div class="header-content">
+                      <h2>Come and Dance</h2>
+                      <h4>rewind your <span>happiness</span></h4>
+                      <button class="btn btn-warning text-light">Get rsound free</button>
+                      <div class="thums">
+                        <li>Like Downloads</li>
+                        <li>Like Downloads</li>
+                        <li>Like Downloads</li>
+                      </div>
+                    </div>
+                    <div class="header-img">
+                      <img class="" src="freshh-connection-unsplash-removebg 1.png" alt="">
+                    </div>
                   </div>
-                </div>
-              </div>
+                  
             </section>
         </header>
     </div>
