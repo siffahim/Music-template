@@ -23,6 +23,14 @@ section{
 .header-container{
     display: flex;       
 }
+.mybtn{
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    border:none;
+    padding:6px 10px;
+    border-radius: 3px;
+    color:#fff;
+}
 .header-content{
     padding-left: 5%;
     margin-top: 5%;
